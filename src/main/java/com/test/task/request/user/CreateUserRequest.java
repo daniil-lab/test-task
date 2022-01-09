@@ -4,6 +4,7 @@ import com.test.task.entity.user.UserRole;
 import org.hibernate.validator.constraints.Length;
 
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 
 public class CreateUserRequest {
     @NotNull
@@ -12,6 +13,7 @@ public class CreateUserRequest {
 
     @NotNull
     @Length(min = 1)
+    @Pattern(regexp = "^([A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{2}==)?$")
     private String password;
 
     @NotNull

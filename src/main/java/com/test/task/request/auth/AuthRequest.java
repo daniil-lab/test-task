@@ -1,12 +1,14 @@
 package com.test.task.request.auth;
 
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 
 public class AuthRequest {
     @NotNull
     private String login;
 
     @NotNull
+    @Pattern(regexp = "^([A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{2}==)?$")
     private String password;
 
     public AuthRequest() {}
