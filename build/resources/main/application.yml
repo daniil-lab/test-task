@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    username: postgres
+    password: 123
+    driver-class-name: org.postgresql.Driver
+#    url: { $SPRING_DATASOURCE_URL }
+    url: jdbc:postgresql://localhost:5432/task
+
+  jpa:
+    generate-ddl: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+
+springdoc:
+  api-docs:
+    path: /docs
+
+  swagger-ui:
+    path: /swagger
+    csrf:
+      enabled: true

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - UpdateArticleTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>UpdateArticleTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.test.task.article.html">com.test.task.article</a> &gt; UpdateArticleTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">4.908s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test()</td>
+<td class="success">4.908s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2022-01-09 15:03:41.302  INFO 50508 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.test.task.article.UpdateArticleTest], using SpringBootContextLoader
+2022-01-09 15:03:41.303  INFO 50508 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.test.task.article.UpdateArticleTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-01-09 15:03:41.304  INFO 50508 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.test.task.article.UpdateArticleTest]: UpdateArticleTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-01-09 15:03:41.311  INFO 50508 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.test.task.TaskApplication for test class com.test.task.article.UpdateArticleTest
+2022-01-09 15:03:41.319  INFO 50508 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-01-09 15:03:41.321  INFO 50508 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5ca012a6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@772a370d, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1eb21f22, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7e4f42c0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@22265a8d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@492939b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@ad7d724, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@e8acdfc, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@1e680c92, org.springframework.test.context.event.EventPublishingTestExecutionListener@ef64a8f, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@3a2cc282, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@62910d16, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3cc3914a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5d066f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5c39ec34, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@362aa318, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@16433d56]
+2022-01-09 15:03:41.358  INFO 50508 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 15:03:41.360  INFO 50508 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2022-01-09 15:03:41.363  INFO 50508 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.2)
+
+2022-01-09 15:03:41.465  INFO 50508 --- [    Test worker] com.test.task.article.UpdateArticleTest  : Starting UpdateArticleTest using Java 17.0.1 on Mac-mini-Daniil.local with PID 50508 (started by daniil in /Users/daniil/Documents/Projects/Task)
+2022-01-09 15:03:41.465  INFO 50508 --- [    Test worker] com.test.task.article.UpdateArticleTest  : No active profile set, falling back to default profiles: default
+2022-01-09 15:03:42.370  INFO 50508 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-09 15:03:42.418  INFO 50508 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 2 JPA repository interfaces.
+2022-01-09 15:03:42.814  INFO 50508 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2022-01-09 15:03:42.833  INFO 50508 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2022-01-09 15:03:42.858  INFO 50508 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 15:03:42.867  INFO 50508 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-01-09 15:03:43.236  INFO 50508 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-09 15:03:43.237  INFO 50508 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 15:03:43.705  WARN 50508 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-09 15:03:44.070  INFO 50508 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52d57307, org.springframework.security.web.context.SecurityContextPersistenceFilter@357f7e2d, org.springframework.security.web.header.HeaderWriterFilter@202e0ff4, org.springframework.security.web.authentication.logout.LogoutFilter@5cd3f5bf, com.test.task.configuration.JwtFilter@550a78ed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30396acf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@60389293, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@286cd3ad, org.springframework.security.web.session.SessionManagementFilter@19e78fa, org.springframework.security.web.access.ExceptionTranslationFilter@78cfa18c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4916619e]
+2022-01-09 15:03:45.830  INFO 50508 --- [    Test worker] com.test.task.article.UpdateArticleTest  : Started UpdateArticleTest in 4.463 seconds (JVM running for 81.282)
+2022-01-09 15:03:45.843  INFO 50508 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@18e69455 testClass = UpdateArticleTest, testInstance = com.test.task.article.UpdateArticleTest@4e850e68, testMethod = test@UpdateArticleTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5111de33 testClass = UpdateArticleTest, locations = '{}', classes = '{class com.test.task.TaskApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7fb95505, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@ea400cb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3ad2e17, [ImportsContextCustomizer@5b33446d key = [org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@535779e4, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4ce1d6d0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@40238dd0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@10959ece], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -&gt; true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -&gt; true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@eba003e]; rollback [true]
+2022-01-09 15:03:46.261  INFO 50508 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@18e69455 testClass = UpdateArticleTest, testInstance = com.test.task.article.UpdateArticleTest@4e850e68, testMethod = test@UpdateArticleTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5111de33 testClass = UpdateArticleTest, locations = '{}', classes = '{class com.test.task.TaskApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7fb95505, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@ea400cb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3ad2e17, [ImportsContextCustomizer@5b33446d key = [org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@535779e4, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4ce1d6d0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@40238dd0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@10959ece], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -&gt; true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -&gt; true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.3.2</a> at 9 янв. 2022 г., 15:04:40</p>
+</div>
+</div>
+</body>
+</html>
