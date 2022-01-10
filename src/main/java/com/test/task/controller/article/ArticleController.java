@@ -88,8 +88,8 @@ public class ArticleController {
     }
 
     @PreAuthorize("hasAnyAuthority('USER', 'ADMIN')")
-    @Operation(summary = "Get all articles")
-    @GetMapping("/")
+    @Operation(summary = "Get articles by page")
+    @GetMapping("/paging")
     public ResponseEntity<ServiceResponse<List<ArticleDTO>>> getArticlesByPage(
             @RequestParam
                 int pageSize,
