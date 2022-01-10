@@ -9,6 +9,8 @@ import com.test.task.service.user.UserService;
 import com.test.task.util.ArticleDateConverter;
 import com.test.task.util.ServiceException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
@@ -28,6 +30,17 @@ public class ArticleService {
 
     @Autowired
     private UserService userService;
+
+    public List<Article> getArticleByPage(int pageSize, int page) {
+        Pageable pageRequest = PageRequest.of(page, pageSize);
+
+        Iterable<Article> pagedArticles = articleRepository.findAll(pageRequest);
+        List<Article> articles = new ArrayList<>();
+
+        pagedArticles.forEach(articles::add);
+
+        return articles;
+    }
 
     public Article createArticle(CreateArticleRequest request) {
         User user = userService.getUserById(request.getAuthorId());

@@ -88,6 +88,22 @@ public class ArticleController {
     }
 
     @PreAuthorize("hasAnyAuthority('USER', 'ADMIN')")
+    @Operation(summary = "Get all articles")
+    @GetMapping("/")
+    public ResponseEntity<ServiceResponse<List<ArticleDTO>>> getArticlesByPage(
+            @RequestParam
+                int pageSize,
+            @RequestParam
+                int page
+    ) {
+        return new ResponseEntity<>(new ServiceResponse<>(
+                HttpStatus.OK.value(),
+                articleService.getArticleByPage(pageSize, page).stream().map(ArticleDTO::new).collect(Collectors.toList()),
+                "Articles returned"
+        ), HttpStatus.OK);
+    }
+
+    @PreAuthorize("hasAnyAuthority('USER', 'ADMIN')")
     @Operation(summary = "Remove article")
     @DeleteMapping("/{articleId}")
     public ResponseEntity<ServiceResponse<ArticleDTO>> removeArticle(
